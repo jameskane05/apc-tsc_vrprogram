@@ -23,6 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/05_Maze B.unity
     guid: 17b24c474fb17da47bb3551f51e886be
-  - enabled: 1
-    path: Assets/Scenes/06_Maze CM.unity
-    guid: 77f74f02d5a60d84d997cf7eca375574
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000

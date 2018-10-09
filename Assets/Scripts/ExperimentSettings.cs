@@ -45,10 +45,10 @@ public class ExperimentSettings {
         _instance.MazeSettings.TrialName = _instance.MazeSettings.MazeName.ToString();
         if (ExperimentSettings.IsStudy() && !ExperimentSettings.IsPractice()) _instance.MazeSettings.TrialName += "_LearnT";
 
-        //else if (!ExperimentSettings.IsStudy() && !ExperimentSettings.IsPractice()) {
-            //if (_instance.MazeSettings.Reverse) _instance.MazeSettings.TrialName += "_FWDT";
-            //else _instance.MazeSettings.TrialName += "_REVT";
-        //}
+        else if (!ExperimentSettings.IsStudy() && !ExperimentSettings.IsPractice()) {
+            if (_instance.MazeSettings.Reverse) _instance.MazeSettings.TrialName += "_FWD";
+            else _instance.MazeSettings.TrialName += "_REV";
+        }
 
         if (_instance.TrialTracker.ContainsKey(_instance.MazeSettings.TrialName)) _instance.TrialTracker[_instance.MazeSettings.TrialName] += 1;
         else _instance.TrialTracker[_instance.MazeSettings.TrialName] = 1;
